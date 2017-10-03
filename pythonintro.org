@@ -10,9 +10,20 @@
  * relatively easy to pick up, designed to get out of the way
  * a large collection of modules to solve every day problems
  * It's open source.
+ * There are lots of types of python, we're only looking at one
 
-* I've run the local user group for years
-* I've run the australian python conference in brisbane twice, helped out
-  in other cities
-* These lecture slides are Creative Commons
+
+* Python concepts
+ * everything is an object
+ * some things change, some things don't
+
+* Python data structures
+ * atoms: strings, numbers
+ * molecules: tuples, lists, dictionaries
+
+* Things about myself
+ * I've run the local user group for years
+ * I've run the Australian python conference in Brisbane twice, helped out
+   in other cities
+ * These lecture slides are Creative Commons
 
