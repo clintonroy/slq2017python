@@ -1,29 +1,50 @@
-* programming comes down to a few things
- * doing one step before another
- * repeating steps
- * choosing between steps
- * grouping steps
+#+LATEX_HEADER: \usepackage{ccicons}
+
+#+TITLE: Introduction to Programming with Python
+#+AUTHOR: Clinton Roy
+#+LaTeX_HEADER: \institute[slqedge]{The Edge, State Library of Queensland}
+
+* Copying
+ :PROPERTIES:
+ :COPYING:  t
+ :END:
+
+ Copyright \copy \the\year\_ Clinton Roy
+
+ This work is licensed under a Creative Commons Attribution 4.0
+ International License. \ccby
+
+* Basic Programming
+ * programming comes down to a few things
+  * doing one step before another
+  * repeating steps
+  * choosing between steps
+  * grouping steps
+
+* Python Abstractions
+
+
 
 * Python as a programming language
- * professional programming language used all over the world in many
-   industries
- * relatively easy to pick up, designed to get out of the way
- * a large collection of modules to solve every day problems
- * It's open source.
- * There are lots of types of python, we're only looking at one
+  * professional programming language used all over the world in many
+    industries
+  * relatively easy to pick up, designed to get out of the way
+  * a large collection of modules to solve every day problems
+  * It's open source.
+  * There are lots of types of python, we're only looking at one
 
 
 * Python concepts
- * everything is an object
- * some things change, some things don't
+  * everything is an object
+  * some things change, some things don't
 
 * Python data structures
- * atoms: strings, numbers
- * molecules: tuples, lists, dictionaries
+  * atoms: strings, numbers
+  * molecules: tuples, lists, dictionaries
 
 * Things about myself
- * I've run the local user group for years
- * I've run the Australian python conference in Brisbane twice, helped out
-   in other cities
- * These lecture slides are Creative Commons
+  * I've run the local user group for years
+  * I've run the Australian python conference in Brisbane twice, helped out
+    in other cities
+  * These lecture slides are Creative Commons
 
