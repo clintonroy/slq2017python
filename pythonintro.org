@@ -14,37 +14,41 @@
  This work is licensed under a Creative Commons Attribution 4.0
  International License. \ccby
 
-* Basic Programming
- * programming comes down to a few things
-  * doing one step before another
-  * repeating steps
-  * choosing between steps
-  * grouping steps
+* Fundamental Programming Concepts
+ * Computers run a lot of tiny steps very quickly.
+ * Most programming comes down to organising steps:
+  1. Doing one step after another
+  2. Repeating steps
+  3. Choosing between two steps
+  4. Grouping steps
 
-* Python Abstractions
+* Fundamental Python Concepts
+ * Everything is an object
+ * Some objects change, some objects don't
+ * Easy to use data structures
+ * Takes care of a lot of details for you
+ * Designed to be a learning language
+ * Low cognitive load, lets you work on your problem
 
+* Python Details
+ * Professional programming language used all over the world in many
+   industries
+ * It's Open Source, your skills are portable.
+ * There are lots of implementations of Python, we're only looking at one
+ * Comes with Linux. Older versions come bundled with Apple. Easyish to install on Windows.
 
-
-* Python as a programming language
-  * professional programming language used all over the world in many
-    industries
-  * relatively easy to pick up, designed to get out of the way
-  * a large collection of modules to solve every day problems
-  * It's open source.
-  * There are lots of types of python, we're only looking at one
-
-
-* Python concepts
-  * everything is an object
-  * some things change, some things don't
+* Grouping of steps
+ * functions
+ * classes
+ * files
+ * libraries
 
 * Python data structures
   * atoms: strings, numbers
   * molecules: tuples, lists, dictionaries
 
-* Things about myself
+* Things about Myself
   * I've run the local user group for years
   * I've run the Australian python conference in Brisbane twice, helped out
     in other cities
-  * These lecture slides are Creative Commons
-
+  * Help out at many Open Source and Open Data events.
