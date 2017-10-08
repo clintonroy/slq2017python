@@ -10,23 +10,30 @@
 * Introduction
 
 ** Introduction to this Class
- * Skills you will go away with
+ * Take away skills:
+  * Fundamental knowledge of:
+   * all programming languages
+   *  of the Python language
+   * of the Python ecosystem
 
 ** Notes on these Notes
  :PROPERTIES:
  :COPYING:  t
  :END:
 
- Copyright \copy \the\year\_ Clinton Roy
+ * Latest version: https://github.com/clintonroy/slq2017python\\
 
- This work is licensed under a Creative Commons Attribution 4.0
- International License. \ccby
+ * Copyright \copy \the\year\_ Clinton Roy
+
+ * This work is licensed under a Creative Commons Attribution 4.0 International License. \ccby
 
 ** Introduction to Myself
-  * I've run the local user group for years
-  * I've run the Australian python conference in Brisbane twice, helped out
+ * I've:
+  * Run the local user group for years
+  * Run the Australian Python conference in Brisbane twice, helped out
     in other cities
-  * Help out at many Open Source and Open Data events.
+  * Help out at many Open Source and Open Data events:
+   * Health Hack, Library Hack, Gov Hack
 
 
 * Fundamental Programming Concepts
@@ -37,17 +44,22 @@
   2. Repeating steps
   3. Choosing between two steps
   4. Grouping steps
+ * Variables and assignment
 
 * Fundamental Python Concepts
+** Design Goals of Python
+ * Takes care of a lot of details for you
+ * To be fast and easy to learn
+ * Low cognitive load, lets you work on your problem
+
+
 ** Fundamental Python Concepts
  * Everything is an object
  * Some objects change, some objects don't
  * Easy to use data structures
- * Takes care of a lot of details for you
- * Designed to be a learning language
- * Low cognitive load, lets you work on your problem
 
-* Python Details
+
+** Python Details
  * Professional programming language used all over the world in many
    industries
  * It's Open Source, your skills are portable.
@@ -63,19 +75,27 @@
 
 ** Data Structures
 
-* Python data structures
-  * atoms: strings, numbers
-  * molecules: tuples, lists, dictionaries
+** Python data structures
+ * atoms: strings, numbers
+ * molecules: tuples, lists, dictionaries
 
 * Resources
 ** Resources
+ * Python.org
  * Books
   * Automate the Boring Stuff with Python \ccbyncsa{}
     https://automatetheboringstuff.com
- * Python.com
- * Brisbane Python Users Group
- * Python Conference Videos on Youtube
- * Software Carpentry groups at Uni
+ * Users Group
+   * Brisbane Python Users Group
+   * Humbug
+ * Conferences
+  * PyCon Au, PyCon NZ
+  * Videos on Youtube
+ * Software Carpentry groups at UQ, QUT, Griffith
  * Podcasts
+  * From Python import podcast
+  * Podcast._ _init _ _
+  * Python Bytes
+  * Talk Python to Me
 
 
