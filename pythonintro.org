@@ -15,6 +15,10 @@
    * all programming languages
    *  of the Python language
    * of the Python ecosystem
+ * Tried to use non-technical language
+ * Tried to use physical metaphors
+ * Instant gratification, use the interpreter
+ * Self directed, internal motivation
 
 ** Notes on these Notes
  :PROPERTIES:
@@ -29,6 +33,7 @@
 
 ** Introduction to Myself
  * I've:
+  * Used Python for twenty mumble years
   * Run the local user group for years
   * Run the Australian Python conference in Brisbane twice, helped out
     in other cities
@@ -36,25 +41,18 @@
    * Health Hack, Library Hack, Gov Hack
 
 
-* Fundamental Programming Concepts
-** Fundamental Programming Concepts
- * Computers run a lot of tiny steps very quickly.
- * Most programming comes down to organising steps:
-  1. Doing one step after another
-  2. Repeating steps
-  3. Choosing between two steps
-  4. Grouping steps
- * Variables and assignment
-
-* Fundamental Python Concepts
+* Fundamentals of Python
 ** Design Goals of Python
  * Takes care of a lot of details for you
  * To be fast and easy to learn
  * Low cognitive load, lets you work on your problem
+ * Does not lock things down
+ * Minimise eye strain
 
 
-** Fundamental Python Concepts
+** Fundamentals Python Concepts
  * Everything is an object
+  * An object is data and related methods
  * Some objects change, some objects don't
  * Easy to use data structures
 
@@ -63,21 +61,70 @@
  * Professional programming language used all over the world in many
    industries
  * It's Open Source, your skills are portable.
- * There are lots of implementations of Python, we're only looking at one
+ * There are lots of implementations of Python, we're only looking at
+   one, but 99% of today is useful to all
  * Comes with Linux. Older versions come bundled with Apple. Easyish to install on Windows.
 
-* Grouping Steps
-** Grouping of steps
+* Fundamental Programming Concepts
+** Fundamental Programming Concepts
+ * Computers run a lot of tiny steps very quickly.
+  * Move this bit of memory into the cpu
+  * Move this other bit of memory into the CPU
+  * Add these two numbers in the CPU
+  * Put the result back into memory
+
+ * Most programming comes down to organising steps:
+  1. Doing one step after another
+  2. Repeating steps
+  3. Choosing between two steps
+  4. Grouping steps
+ * Variables and assignment
+
+
+
+* Stepping Stones
+** Example steps
+ * assignment
+ * function calls
+ * method calls
+ * maths
+ * strings
+
+** Grouping of Steps
  * functions
  * classes
  * files
  * libraries
 
-** Data Structures
+* Data Structures
 
-** Python data structures
- * atoms: strings, numbers
+** Python Data Structures
+ * atoms: numbers, numbers
  * molecules: tuples, lists, dictionaries
+ * mutable or immutable
+
+** Numbers
+ * Immutable
+ * Whole numbers, decimal points, Fractions
+ 123, 3.14, Decimal(3, 4)
+
+** Strings
+ * Immutable
+ * Letters in between quotes
+  'letters in between single quotes'
+  "letters in between double quotes"
+  """letters in between triple quotes"""
+
+** Tuples
+ * Immutable
+
+** Lists
+ * Mutable
+
+** Dictionaries
+
+
+
 
 * Resources
 ** Resources
@@ -94,7 +141,7 @@
  * Software Carpentry groups at UQ, QUT, Griffith
  * Podcasts
   * From Python import podcast
-  * Podcast._ _init _ _
+  * Podcast.__init__
   * Python Bytes
   * Talk Python to Me
 
