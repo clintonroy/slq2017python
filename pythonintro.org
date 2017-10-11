@@ -5,7 +5,10 @@
 #+EMAIL: clinton.roy@gmail.com
 #+LaTeX_HEADER: \institute[slqedge]{The Edge, State Library of Queensland}
 
+
+
 #+OPTIONS: H:2
+
 
 * Introduction
 
@@ -16,7 +19,6 @@
    *  of the Python language
    * of the Python ecosystem
  * Tried to use non-technical language
- * Tried to use physical metaphors
  * Instant gratification, use the interpreter
  * Self directed, internal motivation
 
@@ -85,14 +87,37 @@
 * Stepping Stones
 ** Example steps
  * assignment
+#+BEGIN_SRC
+> angle = 30
+#+END_SRC
  * function calls
+#+BEGIN_SRC
+> min(10, 3)
+#+END_SRC
  * method calls
+#+BEGIN_SRC
+> pancake.flip()
+#+END_SRC
  * maths
- * strings
+#+BEGIN_SRC
+> 10 + 3.4
+#+END_SRC
+
 
 ** Grouping of Steps
  * functions
+#+BEGIN_SRC
+> def exicted(message):
+>     print(message + "!!!")
+#+END_SRC
+
  * classes
+#+BEGIN_SRC
+> class Pancake:
+>     def flip(self):
+>        self.flipped = True
+#+END_SRC
+
  * files
  * libraries
 
@@ -105,15 +130,21 @@
 
 ** Numbers
  * Immutable
- * Whole numbers, decimal points, Fractions
- 123, 3.14, Decimal(3, 4)
+ * Whole numbers, floating point
+#+BEGIN_SRC python
+> 123
+> 3.14
+#+END_SRC
+ * For more fun, Decimal and Fraction
 
 ** Strings
  * Immutable
  * Letters in between quotes
-  'letters in between single quotes'
-  "letters in between double quotes"
-  """letters in between triple quotes"""
+#+BEGIN_SRC python
+> 'letters in between single quotes'
+> "letters in between double quotes"
+> """letters in between triple quotes"""
+#+END_SRC
 
 ** Tuples
  * Immutable
@@ -144,5 +175,3 @@
   * Podcast.__init__
   * Python Bytes
   * Talk Python to Me
-
-
