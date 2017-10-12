@@ -5,10 +5,7 @@
 #+EMAIL: clinton.roy@gmail.com
 #+LaTeX_HEADER: \institute[slqedge]{The Edge, State Library of Queensland}
 
-
-
 #+OPTIONS: H:2
-
 
 * Introduction
 
@@ -41,7 +38,7 @@
     in other cities
   * Help out at many Open Source and Open Data events:
    * Health Hack, Library Hack, Gov Hack
-
+ * Taught at Coder Dojo and Software Carpentry
 
 * Fundamentals of Python
 ** Design Goals of Python
@@ -89,6 +86,7 @@
  * assignment
 #+BEGIN_SRC
 > angle = 30
+> a, b = "a", "b"
 #+END_SRC
  * function calls
 #+BEGIN_SRC
@@ -107,7 +105,7 @@
 ** Grouping of Steps
  * functions
 #+BEGIN_SRC
-> def exicted(message):
+> def excited(message):
 >     print(message + "!!!")
 #+END_SRC
 
@@ -137,6 +135,14 @@
 #+END_SRC
  * For more fun, Decimal and Fraction
 
+** Number Methods
+#+BEGIN_SRC
+> 1 + 1
+> 3 - 4
+> 4 * 2
+> 2 ** 4
+#+END_SRC
+
 ** Strings
  * Immutable
  * Letters in between quotes
@@ -146,16 +152,152 @@
 > """letters in between triple quotes"""
 #+END_SRC
 
+** String Methods
+#+BEGIN_SRC
+> "joining" + " " + "strings"
+> "needle" in "a haystack"
+> "one two three".index("two")
+> "one to three".split()
+#+END_SRC
+
 ** Tuples
  * Immutable
+#+BEGIN_SRC
+> x, y, z = 5, 12
+> two_dimensions = (x, y)
+> three_dimensions = (x, y, z)
+> ("one", 2, 3.0)
+#+END_SRC
 
 ** Lists
  * Mutable
+#+BEGIN_SRC
+> l = ["a", "b", "c"]
+> l.append("d")
+> ["one", "two", "three"] + [4, 5, 6]
+#+END_SRC
+
+** List Methods
+#+BEGIN_SRC
+> l = [5, 4, 3, 2 1]
+> 
+> l.sort()
+>
+> l.count()
+#+END_SRC
 
 ** Dictionaries
+ * Mutable
+ * An association between a key and a value
+ * Keys must be immutable
+#+BEGIN_SRC
+> d = {"key1": "value1", "key2": "value2"}
+>
+> d["key3"] = "value3"      # Adding an association
+>
+> d["key1"]                 # Asking for an association
+#+END_SRC
 
+** Dictionary Example
+#+BEGIN_SRC
+> thesaurus = {"red" : ["scarlet", "rosy", "ruddy"],
+>              "blue" : ["azure", "navy", "cobalt"]}
+>
+> thesaurus["red"]
+#+END_SRC
 
+** Other data structures
+ * Sets
+ * Queues
+ * Heaps
+ * ...
 
+* Flow Control
+
+** If Statement
+#+BEGIN_SRC
+> if "needle" in ["haystack"]:
+>   print("found the needle!")
+> else:
+>   print("did not find the needle")
+#+END_SRC
+
+ * Expressions Examples
+#+BEGIN_SRC
+> a = 10
+> b = 11
+> a == b    # equals
+> a > b     # greater than
+> a < b     # less than
+#+END_SRC
+
+** For Loops
+ * Loop through a data structure
+#+BEGIN_SRC
+> for element in ["a", "b", "c"]:
+>     print(element)
+#+END_SRC
+
+** A more complicated example
+
+#+BEGIN_SRC
+> upper, lower, other = [], [], []
+> for element in ["one", "TWO", "three", "4"]:
+>     if element.isupper():
+>         upper.append(element)
+>     elif element.islower():
+>         lower.append(element)
+>     else:
+>         other.append(element)
+#+END_SRC
+** Other loops
+ * While 
+#+BEGIN_SRC
+> a = 0
+> while a < 10:
+>     print(a)
+>     a = a + 1 
+#+END_SRC
+
+** Functions
+ * Let you reuse a block of code
+#+BEGIN_SRC
+> def even_stevens(number):
+>     if number % 2 == 0:
+>         return True
+>     else:
+>         return False
+#+END_SRC
+
+** Classes and Objects
+ * Lets you organise data and methods together
+#+BEGIN_SRC
+> class Pancake:
+>     def __init__(self, batter_ml):
+>         self.size = batter_ml
+>         self.flipped = False
+>
+>     def flipped(self):
+>         self.flipped = True
+>
+> p = Pancake(130)
+> p
+> p.size
+> p.flipped
+> p.flip()
+> p.flipped
+#+END_SRC
+
+** Library use
+#+BEGIN_SRC
+> import random
+> random.randint(1, 100)
+#+END_SRC
+
+** Module List
+#+BEGIN_SRC
+> help() # Then "modules"
+#+END_SRC
 
 * Resources
 ** Resources
