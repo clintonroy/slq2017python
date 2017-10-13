@@ -19,26 +19,20 @@
  * Instant gratification, use the interpreter
  * Self directed, internal motivation
 
-** Notes on these Notes
- :PROPERTIES:
- :COPYING:  t
- :END:
-
- * Latest version: https://github.com/clintonroy/slq2017python\\
-
- * Copyright \copy \the\year\_ Clinton Roy
-
- * This work is licensed under a Creative Commons Attribution 4.0 International License. \ccby
 
 ** Introduction to Myself
- * I've:
+ * Technical Experience:
   * Used Python for twenty mumble years
-  * Run the local user group for years
-  * Run the Australian Python conference in Brisbane twice, helped out
-    in other cities
-  * Help out at many Open Source and Open Data events:
+  * Wide variety of research and commercial groups
+ * Organisational Experience
+  * Local User group
+  * Australian Python conference in Brisbane
+  * Volunteer at other Open events:
    * Health Hack, Library Hack, Gov Hack
- * Taught at Coder Dojo and Software Carpentry
+ * Teaching Experience:
+  * Conference Speaking and Tutorials
+  * CoderDojo
+  * Software Carpentry
 
 * Fundamentals of Python
 ** Design Goals of Python
@@ -225,8 +219,7 @@
 
  * Expressions Examples
 #+BEGIN_SRC
-> a = 10
-> b = 11
+> a, b = 10, 11
 > a == b    # equals
 > a > b     # greater than
 > a < b     # less than
@@ -237,6 +230,11 @@
 #+BEGIN_SRC
 > for element in ["a", "b", "c"]:
 >     print(element)
+#+END_SRC
+ * Loop through some numbers
+#+BEGIN_SRC
+> for i in range(10):
+>     print(i)
 #+END_SRC
 
 ** A more complicated example
@@ -302,13 +300,15 @@
 
 * Resources
 ** Resources
+ * These notes: Copyright \copy \the\year\_ Clinton Roy
+  * https://github.com/clintonroy/slq2017python \ccby
  * Python.org
  * Books
   * Automate the Boring Stuff with Python \ccbyncsa{}
     https://automatetheboringstuff.com
- * Users Group
+ * Users Groups
    * Brisbane Python Users Group
-   * Humbug
+   * Humbug (Home Unix Machine, Brisbane Users Group)
  * Conferences
   * PyCon Au, PyCon NZ
   * Videos on Youtube
@@ -318,3 +318,6 @@
   * Podcast.__init__
   * Python Bytes
   * Talk Python to Me
+
+* TODO put a really early slide in about: type, help and not being happy till they've produced an error.
+* TODO need to add comments about being able to put more arguments in
