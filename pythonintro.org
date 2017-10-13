@@ -122,7 +122,7 @@
 * Data Structures
 
 ** Python Data Structures
- * atoms: numbers, numbers
+ * atoms: numbers, strings
  * molecules: tuples, lists, dictionaries
  * mutable or immutable
 
@@ -141,6 +141,7 @@
 > 3 - 4
 > 4 * 2
 > 2 ** 4
+> 8 / 3
 #+END_SRC
 
 ** Strings
@@ -163,7 +164,7 @@
 ** Tuples
  * Immutable
 #+BEGIN_SRC
-> x, y, z = 5, 12
+> x, y, z = 5, 12, 10
 > two_dimensions = (x, y)
 > three_dimensions = (x, y, z)
 > ("one", 2, 3.0)
@@ -179,11 +180,11 @@
 
 ** List Methods
 #+BEGIN_SRC
-> l = [5, 4, 3, 2 1]
+> l = [5, 4, 5, 3, 5, 2, 1, 5]
 > 
 > l.sort()
 >
-> l.count()
+> l.count(5)
 #+END_SRC
 
 ** Dictionaries
