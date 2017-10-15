@@ -9,17 +9,6 @@
 
 * Introduction
 
-** Introduction to this Class
- * Take away skills:
-  * Fundamental knowledge of:
-   * all programming languages
-   *  of the Python language
-   * of the Python ecosystem
- * Tried to use non-technical language
- * Instant gratification, use the interpreter
- * Self directed, internal motivation
-
-
 ** Introduction to Myself
  * Technical Experience:
   * Used Python for twenty mumble years
@@ -34,6 +23,20 @@
   * CoderDojo
   * Software Carpentry
 
+
+** Introduction to this Class
+ * Take away skills:
+  * Fundamental knowledge of:
+   * all programming languages
+   *  of the Python language
+   * of the Python ecosystem
+ * Tried to use non-technical language
+ * Instant gratification, use the interpreter
+ * Extend the examples:
+  * add, remove, change arguments!
+  * don't move on till you get an error!
+ * Self directed, internal motivation
+
 * Fundamentals of Python
 ** Design Goals of Python
  * Takes care of a lot of details for you
@@ -43,13 +46,6 @@
  * Minimise eye strain
 
 
-** Fundamentals Python Concepts
- * Everything is an object
-  * An object is data and related methods
- * Some objects change, some objects don't
- * Easy to use data structures
-
-
 ** Python Details
  * Professional programming language used all over the world in many
    industries
@@ -57,6 +53,13 @@
  * There are lots of implementations of Python, we're only looking at
    one, but 99% of today is useful to all
  * Comes with Linux. Older versions come bundled with Apple. Easyish to install on Windows.
+
+
+** Fundamentals Python Concepts
+ * Everything is an object
+  * An object is data and related methods
+ * Some objects change, some objects don't
+ * Easy to use data structures
 
 * Fundamental Programming Concepts
 ** Fundamental Programming Concepts
@@ -72,10 +75,21 @@
   3. Choosing between two steps
   4. Grouping steps
  * Variables and assignment
-
+  * A box named anything
+  * Spreadsheet Cells
 
 
 * Stepping Stones
+
+** Helping hands
+ * For the most part, ignore methods that begin with double underscore
+#+BEGIN_SRC
+> s = "some string"
+> type(s)
+> help(str)
+#+END_SRC
+
+
 ** Example steps
  * assignment
 #+BEGIN_SRC
@@ -302,7 +316,9 @@
 ** Resources
  * These notes: Copyright \copy \the\year\_ Clinton Roy
   * https://github.com/clintonroy/slq2017python \ccby
- * Python.org
+ * Websites
+  * http://python.org/
+  * http://jupyter.org/
  * Books
   * Automate the Boring Stuff with Python \ccbyncsa{}
     https://automatetheboringstuff.com
@@ -319,5 +335,3 @@
   * Python Bytes
   * Talk Python to Me
 
-* TODO put a really early slide in about: type, help and not being happy till they've produced an error.
-* TODO need to add comments about being able to put more arguments in
