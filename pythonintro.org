@@ -131,7 +131,7 @@
 
 ** Python Data Structures
  * atoms: numbers, strings
- * molecules: tuples, lists, dictionaries
+ * molecules: lists, dictionaries
  * mutable or immutable
 
 ** Numbers
@@ -167,15 +167,6 @@
 > "needle" in "a haystack"
 > "one two three".index("two")
 > "one to three".split()
-#+END_SRC
-
-** Tuples
- * Immutable
-#+BEGIN_SRC
-> x, y, z = 5, 12, 10
-> two_dimensions = (x, y)
-> three_dimensions = (x, y, z)
-> ("one", 2, 3.0)
 #+END_SRC
 
 ** Lists
@@ -216,6 +207,7 @@
 #+END_SRC
 
 ** Other data structures
+ * Tuples (immutable lists)
  * Sets
  * Queues
  * Heaps
