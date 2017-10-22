@@ -290,7 +290,7 @@
 >         self.size = batter_ml
 >         self.flipped = False
 >
->     def flipped(self):
+>     def flip(self):
 >         self.flipped = True
 >
 > p = Pancake(130)
