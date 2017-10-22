@@ -1,0 +1,17 @@
+#+LATEX_HEADER: \usepackage{ccicons}
+
+#+TITLE: Practical Python - Internet of Things
+#+AUTHOR: Clinton Roy
+#+EMAIL: clinton.roy@gmail.com
+#+LaTeX_HEADER: \institute[slqedge]{The Edge, State Library of Queensland}
+
+#+OPTIONS: H:2
+
+* install micropython on the board
+ * explain breadboards
+* get a screen session
+* get mac address
+* turn on web repl
+* reboot
+* go through each bit of electronics
+* get stuff uploaded to laptop
