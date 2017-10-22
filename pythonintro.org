@@ -85,6 +85,7 @@
  * For the most part, ignore methods that begin with double underscore
 #+BEGIN_SRC
 > s = "some string"
+> print(s)
 > type(s)
 > help(str)
 #+END_SRC
