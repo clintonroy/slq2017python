@@ -7,6 +7,31 @@
 
 #+OPTIONS: H:2
 
+* MicroPython
+** Introducing MicroPython
+ * Started as a Kickstarter
+ * All Open Source
+ * Python for for micro processor boards
+
+* Installation
+** Installation 
+ * Install Python, e.g. anaconda.org
+ * Install esptool
+#+BEGIN_SRC shell
+> pip install esptool
+#+END_SRC
+
+ * Clear flash memory
+#+BEGIN_SRC shell
+> esptool --port /dev/ttyUSB0 erase_flash
+#+END_SRC
+ * Download MicroPython http://github.com/micropython/micropython/releases
+ * Flash board
+#+BEGIN_SRC bash
+> esptool.py /dev/ttyUSB0 --baud 460800 write_flash \
+>   --flash_size=detect 0 ~/Downloads/esp8266-$version.bin
+
+#+END_SRC
 * install micropython on the board
  * explain breadboards
 * get a screen session
@@ -15,3 +40,8 @@
 * reboot
 * go through each bit of electronics
 * get stuff uploaded to laptop
+
+* Resources
+** Resources
+ * These notes: Copyright \copy \the\year\_ Clinton Roy
+  * https://github.com/clintonroy/slq2017python \ccby
