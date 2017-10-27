@@ -7,41 +7,153 @@
 
 #+OPTIONS: H:2
 
-* MicroPython
+* Introduction
 ** Introducing MicroPython
+ * Python for microcontroller boards
  * Started as a Kickstarter
  * All Open Source
- * Python for for micro processor boards
+
+** Introducing the ESP8266
+ * 80MHZ processor
+ * lots of GPIO pins
+ * Digital interfaces
+ * One Analogue
+ * Wifi
+ * Cheap
+ * reasonably well documented (now)
+
+** ESP8266 Development Board
+ [[./esp8266_devkit_horizontal-01.png]]
+
+** Pin Mapping
+
+|Micropython | Board|
+|0|D3
+|2|D4 (also Led1 but inverse)*
+|4|D2
+|5|D1
+|9|SD2
+|10|SD3
+|12|D6
+|13|D7
+|14|D5
+|15|D8
+|16|D0 (also Led2 but inverse)*
+
+** Introduction to Electricity
+ * The water analogy
+   #+ATTR_LATEX: :width 0.6\textwidth
+   [[./ohms+law+comedy.png]]
+
+
+ http://www.electricalonline4u.com/2015/10/ohm-law-explanation-guide.html
 
 * Installation
 ** Installation 
- * Install Python, e.g. anaconda.org
- * Install esptool
+ * Install Python, e.g. http://anaconda.org
+ * Install =esptool=
 #+BEGIN_SRC shell
 > pip install esptool
 #+END_SRC
 
  * Clear flash memory
+
 #+BEGIN_SRC shell
-> esptool --port /dev/ttyUSB0 erase_flash
+> esptool.py --port /dev/ttyUSB0 erase_flash
 #+END_SRC
  * Download MicroPython http://github.com/micropython/micropython/releases
  * Flash board
 #+BEGIN_SRC bash
-> esptool.py /dev/ttyUSB0 --baud 460800 write_flash \
->   --flash_size=detect 0 ~/Downloads/esp8266-$version.bin
-
+> esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash
+    --flash_size=detect 0 ~/Downloads/esp8266-$version.bin
 #+END_SRC
-* install micropython on the board
- * explain breadboards
-* get a screen session
-* get mac address
-* turn on web repl
-* reboot
-* go through each bit of electronics
-* get stuff uploaded to laptop
+
+** Setup
+ * Connect to the board
+#+BEGIN_SRC 
+> screen /dev/ttyUSB0 115200
+#+END_SRC
+ * Hit enter!
+
+ * Work out WIFI name
+#+BEGIN_SRC 
+> import network
+> ap = network.WLAN(network.AP_IF)
+> ap.config("essid")
+#+END_SRC
+ * Write this down!
+ * Turn on the Web Server
+#+BEGIN_SRC 
+> import webrepl_setup
+#+END_SRC
+ * Follow the prompts. Pick a simple password.
+ * Turn on Web Server
+ * Reboot...
+ * Connect to Board, password is \texttt{micropythoN}
+
+** Look Around
+ * =Micropython= implements a filesystem, just like a computer.
+
+#+BEGIN_SRC 
+> import os
+> os.listdir()
+#+END_SRC
+
+* Circuits
+
+** RGB LED Layout
+  [[./led_bb.png]]
+
+** RGB LED Code
+#+BEGIN_SRC 
+> from machine import Pin, PWM
+> r = PWM(Pin(4), freq=500, duty=0)
+> g = PWM(Pin(12), freq=500, duty=0)
+> b = PWM(Pin(14), freq=500, duty=0)
+> 
+#+END_SRC
+
+** Servo Layout
+ * Orange - PWM
+ * Red - +V
+ * Brown - Ground
+
+ [[./servo_bb.png]]
+
+** Servo Code
+#+BEGIN_SRC 
+> from machine import Pin, PWM
+> s = PWM(Pin(14), freq=50, duty=0)
+#+END_SRC
+
+** Force Sensor Layout
+[[./force_bb.png]]
+
+** Force Sensor Code
+#+BEGIN_SRC 
+> from machine import ADC
+> adc = ADC(0)
+> adc.read()
+#+END_SRC
+
+** Temperature Sensor Layout
+ [[./temp_bb.png]]
+
+** Temperature Sensor Code
+#+BEGIN_SRC 
+> import dht
+> import machine
+> d = dht.DHT11(machine.Pin(4))
+>
+> # Only once a second.
+> d.measure()
+> d.temperature()
+> d.humidity()
+#+END_SRC
 
 * Resources
 ** Resources
  * These notes: Copyright \copy \the\year\_ Clinton Roy
   * https://github.com/clintonroy/slq2017python \ccby
+ * https://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/
+ * http://fritzing.org/
