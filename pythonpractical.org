@@ -151,6 +151,11 @@
 > d.humidity()
 #+END_SRC
 
+** Stand Alone Mode
+
+ * Special files:
+  * =boot.py=, =main.py=
+
 * Resources
 ** Resources
  * These notes: Copyright \copy \the\year\_ Clinton Roy
