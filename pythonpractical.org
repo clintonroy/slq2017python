@@ -15,7 +15,7 @@
 
 ** Introducing the ESP8266
  * 80MHZ processor
- * lots of GPIO pins
+ * lots of GPIO (General Purpose Input/Output) pins
  * Digital interfaces
  * One Analogue
  * Wifi
@@ -102,9 +102,11 @@
 * Circuits
 
 ** RGB LED Layout
+ Red/Green/Blue Light Emitting Diode
   [[./led_bb.png]]
 
 ** RGB LED Code
+Pulse Width Modulation
 #+BEGIN_SRC 
 > from machine import Pin, PWM
 > r = PWM(Pin(4), freq=500, duty=0)
@@ -130,6 +132,7 @@
 [[./force_bb.png]]
 
 ** Force Sensor Code
+ * Analogue to Digital Converter
 #+BEGIN_SRC 
 > from machine import ADC
 > adc = ADC(0)
