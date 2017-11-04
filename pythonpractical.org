@@ -107,6 +107,8 @@
 
 ** RGB LED Code
 Pulse Width Modulation
+
+Try small frequencies, e.g. 5Hz
 #+BEGIN_SRC 
 > from machine import Pin, PWM
 > r = PWM(Pin(4), freq=500, duty=0)
@@ -123,6 +125,7 @@ Pulse Width Modulation
  [[./servo_bb.png]]
 
 ** Servo Code
+Try a duty between \approx40 and \approx115
 #+BEGIN_SRC 
 > from machine import Pin, PWM
 > s = PWM(Pin(14), freq=50, duty=0)
