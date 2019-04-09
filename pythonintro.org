@@ -3,7 +3,7 @@
 #+TITLE: Introduction to Programming with Python
 #+AUTHOR: Clinton Roy
 #+EMAIL: clinton.roy@gmail.com
-#+LaTeX_HEADER: \institute[slqedge]{The Edge, State Library of Queensland}
+#+LaTeX_HEADER: \institute[vala]{VALA}
 
 #+OPTIONS: H:2
 
@@ -308,20 +308,17 @@
 * Resources
 ** Resources
  * These notes: Copyright \copy \the\year\_ Clinton Roy
-  * https://github.com/clintonroy/slq2017python \ccby
+ http://github.com/clintonroy/slq2017python/tree/vala19 \ccby
  * Websites
   * http://python.org/
   * http://jupyter.org/
  * Books
   * Automate the Boring Stuff with Python \ccbyncsa{}
     https://automatetheboringstuff.com
- * Users Groups
-   * Brisbane Python Users Group
-   * Humbug (Home Unix Machine, Brisbane Users Group)
  * Conferences
   * PyCon Au, PyCon NZ
   * Videos on Youtube
- * Software Carpentry groups at UQ, QUT, Griffith
+ * Software Carpentry groups
  * Podcasts
   * From Python import podcast
   * Podcast.__init__
